@@ -13,9 +13,11 @@ $(document).ready(function () {
 });
 
 
-function scroll() { 
-  $("#xabout").click(function(){
-    $("html, body").animate({
-      color: "red"}, 2000);
-    });
-  }
+var scroll = function() { 
+  $("#xabout").on("click", function(){
+    // $("html, body").animate({
+    //   color: "red"}, 2000);
+    // });
+    console.log("hi");
+  });
+}

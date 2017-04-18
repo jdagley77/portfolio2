@@ -15,9 +15,20 @@ $(document).ready(function () {
 
 var scroll = function() { 
   $("#xabout").on("click", function(){
-    // $("html, body").animate({
-    //   color: "red"}, 2000);
-    // });
-    console.log("hi");
+    $("body").animate({
+      scrollTop: $("#about").offset().top
+      }, 900);
+  });
+
+  $("#xportfolio").on("click", function(){
+    $("body").animate({
+      scrollTop: $("#portfolio").offset().top
+      }, 900);
+  });
+
+   $("#xcontact").on("click", function(){
+    $("body").animate({
+      scrollTop: $("#contact").offset().top
+      }, 900);
   });
 }

@@ -1,0 +1,206 @@
+body {
+  background-color: grey !important;
+}
+
+#override a {
+  color: black;
+}
+
+#override .navbar-right > li.active > a {
+    background-color: white;
+}
+
+#override {
+  width: 100%;
+}
+
+.navbar-header {
+  padding-left: 10%;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  #dropdown {
+    padding-right: 10%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  #bs-example-navbar-collapse-1 {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #dropdown {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+  }
+  
+  #dropdown > li {
+        float: left;
+    }
+}
+
+
+#about {
+  display: flex;
+  justify-content: center;
+  background-color: lightgrey;
+  margin: 0 10% 0 10%;
+  padding: 30px;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 5%;
+}
+
+.profile {
+  border-radius: 50%;
+  height: 250px;
+}
+
+@media (max-width: 1000px) {
+  #about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .intro-text {
+    padding-bottom: 5%;
+  }
+  
+  .profile {
+    max-width: 250px;
+    max-height: 250px;
+    margin: 0 auto;
+  }
+  
+}
+
+
+#portfolio {
+  display: inline-block;
+  margin: 0 10% 0 10%;
+  text-align: center;
+}
+
+
+.work {
+  height: 45%;
+  width: 45%;
+  padding: 30px;
+}
+
+@media (max-width: 1000px) {
+  #portfolio { 
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0;
+  }
+}
+
+#contact {
+  display: flex !important;
+  flex-flow: row wrap !important;
+  text-align: center !important;
+  margin: 0 10% 0 10% !important;
+  padding: 30px !important;
+  border-top: solid grey 1px !important;
+}
+
+#contact-header {
+  flex: 1 100% !important;
+  padding-bottom: 20px !important;
+}
+
+#contact-form, #contact-aside {
+  flex: 1 !important;
+}
+
+input {
+  border: none !important;
+  outline: none !important;
+  background: none !important;
+  border-bottom: 1px solid darkgrey !important;
+  font-size: 3em !important;
+  margin-bottom: 30px !important;
+}
+
+textarea {
+  border: none !important;
+  outline: none !important;
+  background: none !important;
+  border-bottom: 1px solid darkgrey !important;
+  font-size: 3em !important;
+  margin-bottom: 30px !important;
+}
+
+#override button {
+  border-top: 1px solid darkgrey;
+  float: left;
+  margin-left: 4%;
+}
+
+#contact-aside {
+  font-size: 2em;
+  color: grey;
+  text-align: left;
+  margin-left: 5%;
+}
+
+#social {
+  display: flex;
+  background-color: lightgrey;
+  margin: 0 10% 0 10%;
+  padding: 30px 0 30px 0;
+  text-align: center;
+}
+
+#social h3 {
+  color: grey;
+}
+
+
+#about-area, #get-in-touch {
+  flex: 1;
+  padding: 2%;
+}
+
+footer {
+  display: flex 1;
+  padding: 30px 0 30px 0;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icons li {
+  margin-right: 7%;
+  list-style-type: none;
+}
+
+.icons a {
+  text-decoration: none;
+}
+
+.icons a:hover {
+  color: orange;
+}

@@ -23,6 +23,15 @@ body {
     border-bottom: solid 1px black !important;
 }
 
+.navbar > .container-fluid .navbar-header {
+    margin-left: 10%;
+}
+
+.navbar-brand {
+  padding-left: 0px !important;
+  font-style: bold !important;
+}
+
 @media (min-width: 768px) {
   #dropdown {
     padding-right: 10%;

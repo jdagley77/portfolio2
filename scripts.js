@@ -49,8 +49,8 @@ var navScroll = function() {
 
     documentElem.on("scroll", function(){
       var currentScrollTop = $(this).scrollTop();
-
-      if (currentScrollTop > lastScrollTop) {
+      
+      if (currentScrollTop >= lastScrollTop) {
         nav.hide("fast");
       } else {
         nav.show("fast");

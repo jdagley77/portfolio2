@@ -18,11 +18,6 @@ body {
   padding-left: 10%;
 }
 
-.navbar .hidden {
-  translate: translate3d(0,-100%,0) !important;
-  display: none; !important;
-}
-
 .navbar {
     margin-bottom: 0 !important;
     border-bottom: solid 1px black !important;

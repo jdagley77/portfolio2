@@ -51,13 +51,11 @@ var navScroll = function() {
       var currentScrollTop = $(this).scrollTop();
 
       if (currentScrollTop > lastScrollTop) {
-        nav.addClass("hidden");
+        nav.hide("fast");
       } else {
-        nav.removeClass("hidden");
+        nav.show("fast");
       }
 
       lastScrollTop = currentScrollTop;
     })
-
-
 }

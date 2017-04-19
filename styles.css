@@ -153,11 +153,18 @@ textarea {
   margin-bottom: 30px !important;
 }
 
-#override button {
-  border-top: 1px solid darkgrey;
-  float: left;
-  margin-left: 4%;
+input[type="button"] {
+  border: 1px solid darkgrey !important;
+  font-size: 2em !important;
+  border-radius: 5px !important;
+  color: grey !important;
 }
+
+input[type="button"]:hover {
+  background-color: grey !important;
+  color: white !important;
+}
+
 
 #contact-aside {
   font-size: 2em;
@@ -169,7 +176,7 @@ textarea {
 @media (max-width: 1000px) {
   #contact {
   display: flex !important;
-  flex-flow: column-reverse !important;
+  flex-flow: column-wrap !important;
   text-align: center !important;
   margin: 0% !important;
   padding: 0px !important;
@@ -178,14 +185,19 @@ textarea {
 
 
 #contact-header {
-  flex: 1 100% !important;
+  flex-grow: 1 !important;
   padding-bottom: 20px !important;
 }
 
 #contact-aside {
-  flex: 1 100% !important;
+  flex-grow: 1 !important;
 }
-  
+  .flex {
+    display: flex !important;
+    flex-flow: column-reverse !important;
+  }
+
+
 }
 
 #social {
@@ -230,4 +242,11 @@ footer {
 
 .icons a:hover {
   color: orange;
+}
+
+@media (max-width: 1000px) {
+  #social {
+    margin: 0% !important;
+    padding: 0px !important;
+  }
 }

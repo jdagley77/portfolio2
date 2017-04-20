@@ -11,6 +11,7 @@ $(document).ready(function () {
   
   scroll();
   navScroll();
+  picHover();
 });
 
 
@@ -59,3 +60,16 @@ var navScroll = function() {
       lastScrollTop = currentScrollTop;
     })
 }
+
+var picHover = function() {
+  var $pic = $("img.profile");
+  $pic.hover(function()
+  {
+    $pic.attr("src", "http://res.cloudinary.com/dtk22y6kq/image/upload/v1492725327/tahoe_exl8rx.png");
+  },
+  function()
+  {
+    $pic.attr("src", "http://res.cloudinary.com/dtk22y6kq/image/upload/v1492725930/bluepic_cxz9qi.jpg");
+  })
+}
+

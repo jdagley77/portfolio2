@@ -1,68 +1,104 @@
 body {
-  background-color: grey !important;
+  background-color: grey;
 }
 
-#override a {
-  color: black;
+/*new nav*/
+a {
+  text-decoration: none;
+  color: white;
 }
 
-#override .navbar-right > li.active > a {
-    background-color: white;
-}
-
-#override {
+nav {
+  position: fixed;
   width: 100%;
 }
 
-{
-  padding-left: 10%;
+nav ul {
+  background-color: lightgrey;
+  overflow: hidden;
+  color: white;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: max-height 0.4s;
 }
 
-.navbar {
-    margin-bottom: 0 !important;
-    border-bottom: solid 1px black !important;
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+  color: blue;
 }
 
-.navbar > .container-fluid .navbar-header {
-    margin-left: 10%;
+nav ul li:hover {
+  background-color: #eeee00;
+  color: blue;
+  border-radius: 10px;
 }
 
-.navbar-brand {
-  padding-left: 0px !important;
-  font-style: bold !important;
+.nav-logo {
+  font-weight: bold;
 }
 
-@media (min-width: 768px) {
-  #dropdown {
-    padding-right: 10%;
+.handle {
+  width: 100%;
+  background: orange;
+  text-align: right;
+  padding: 15px 10px;
+  cursor: pointer;
+  color: blue;
+  font-weight: bold;
+  display: none;
+}
+
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+
+section {
+  line-height: 1.5em;
+  font-size: 0.9em;
+  padding: 40px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+@media (max-width: 550px) {
+  nav ul {
+    max-height: 0;
   }
-}
 
-@media (max-width: 768px) {
-  #bs-example-navbar-collapse-1 {
-    margin: 0 auto;
+  .showing {
+    max-height: 20em;
+  }
+
+  nav ul li {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .handle {
+    display: block;
+    background-color: lightgrey;
     text-align: center;
   }
-  
-  #dropdown {
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-  }
-  
-  #dropdown > li {
-        float: left;
-    }
 }
 
+/*nav end, about start*/
 
 #about {
   display: flex;
   justify-content: center;
   background-color: lightgrey;
-  margin: 0 10% 0 10%;
   padding: 30px;
   padding-top: 80px;
+}
+
+.intro-text, .profile {
+    padding: 0 10% 0 10%;
 }
 
 .intro-text {
@@ -72,9 +108,14 @@ body {
   padding-right: 5%;
 }
 
+.strong-intro {
+  color: #eeee00;
+}
+
 .profile {
   border-radius: 50%;
-  height: 250px;
+  max-width: 50%;
+  max-height: 40%;
 }
 
 @media (max-width: 1000px) {
@@ -91,8 +132,6 @@ body {
   }
   
   .profile {
-    max-width: 250px;
-    max-height: 250px;
     margin: 0 auto;
   }
   
@@ -101,8 +140,8 @@ body {
 
 #portfolio {
   display: inline-block;
-  margin: 0 10% 0 10%;
   text-align: center;
+  background-color: #fcf8e3;
 }
 
 
@@ -129,51 +168,62 @@ img.work {
 }
 
 #contact {
-  display: flex !important;
-  flex-flow: row wrap !important;
-  text-align: center !important;
-  margin: 0 10% 0 10% !important;
-  padding: 30px !important;
-  border-top: solid grey 1px !important;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  padding: 30px;
+  border-top: solid grey 1px;
+  background-color: lightgrey;
 }
 
 #contact-header {
-  flex: 1 100% !important;
-  padding-bottom: 20px !important;
+  flex: 1 100%;
+  padding-bottom: 20px;
 }
 
 #contact-form, #contact-aside {
-  flex: 1 !important;
+  flex: 1;
 }
 
 input {
-  border: none !important;
-  outline: none !important;
-  background: none !important;
-  border-bottom: 1px solid darkgrey !important;
-  font-size: 3em !important;
-  margin-bottom: 30px !important;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 1px solid blue;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+input[placeholder] {
+  font-size: 2em;
 }
 
 textarea {
-  border: none !important;
-  outline: none !important;
-  background: none !important;
-  border-bottom: 1px solid darkgrey !important;
-  font-size: 3em !important;
-  margin-bottom: 30px !important;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 1px solid blue;
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+textarea[placeholder] {
+  font-size: 2em;
 }
 
 input[type="button"] {
-  border: 1px solid darkgrey !important;
-  font-size: 2em !important;
-  border-radius: 5px !important;
-  color: grey !important;
+  border: 1px solid blue;
+  font-size: 2em;
+  border-radius: 5px;
+  color: grey;
+  padding: .2em;
+  margin-top: 20px;
+  color: grey;
 }
 
 input[type="button"]:hover {
-  background-color: grey !important;
-  color: white !important;
+  background-color: #eeee00;
+  color: blue;
 }
 
 
@@ -186,43 +236,38 @@ input[type="button"]:hover {
 
 @media (max-width: 1000px) {
   #contact {
-  display: flex !important;
-  flex-flow: column-wrap !important;
-  text-align: center !important;
-  margin: 0% !important;
-  padding: 0px !important;
-  border-top: solid grey 1px !important;
+  display: flex;
+  flex-flow: column-wrap;
+  text-align: center;
+  margin: 0%;
+  padding: 0px;
+  border-top: solid grey 1px;
 }
 
 
 #contact-header {
-  flex-grow: 1 !important;
-  padding-bottom: 20px !important;
+  flex-grow: 1;
+  padding-bottom: 20px;
 }
 
 #contact-aside {
-  flex-grow: 1 !important;
+  flex-grow: 1;
 }
-  .flex {
-    display: flex !important;
-    flex-flow: column-reverse !important;
-  }
 
+.flex {
+  display: flex;
+  flex-flow: column-reverse;
+  }
 
 }
 
 #social {
   display: flex;
-  background-color: lightgrey;
-  margin: 0 10% 0 10%;
-  padding: 30px 0 30px 0;
+  background-color: blue;
+  padding: 100px 0 100px 0;
   text-align: center;
+  color: lightgrey;
 }
-
-#social h3 {
-  color: grey;
-}
-
 
 #about-area, #get-in-touch {
   flex: 1;
@@ -248,16 +293,18 @@ footer {
 }
 
 .icons a {
-  text-decoration: none !important;
+  text-decoration: none;
+  color: white;
 }
 
 .icons a:hover {
-  color: orange;
+  color: #eeee00;
+  text-decoration: none;
 }
 
 @media (max-width: 1000px) {
   #social {
-    margin: 0% !important;
-    padding: 0px !important;
+    margin: 0%;
+    padding: 0px;
   }
 }

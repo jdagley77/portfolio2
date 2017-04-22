@@ -8,11 +8,18 @@ $(document).ready(function () {
             $parent.addClass('active');
         }
     });
-  
+
+  handle();
   scroll();
   navScroll();
   picHover();
 });
+
+var handle = function() {
+$('.handle').on('click', function(){
+    $('nav ul').toggleClass('showing');
+  })
+}
 
 
 var scroll = function() { 
@@ -45,7 +52,7 @@ var scroll = function() {
 
 var navScroll = function() {
   var documentElem = $(document),
-    nav = $(".navbar"),
+    nav = $("nav"),
     lastScrollTop = 0;
 
     documentElem.on("scroll", function(){
@@ -61,7 +68,23 @@ var navScroll = function() {
     })
 }
 
+// var picHover = function() {
+//   var $about = $("#about")
+//   var $pic = $("img.profile");
+//   $about.delegate($pic, "hover", function(e) {
+//     if (e.type==="mouseover") {
+//     $pic.attr("src", "http://res.cloudinary.com/dtk22y6kq/image/upload/v1492725327/tahoe_exl8rx.png");
+//     }
+//     else {
+//     $pic.attr("src", "http://res.cloudinary.com/dtk22y6kq/image/upload/v1492725930/bluepic_cxz9qi.jpg");
+//     }
+//   }
+// }
+
+
+
 var picHover = function() {
+  // var $about = $("#about")
   var $pic = $("img.profile");
   $pic.hover(function()
   {

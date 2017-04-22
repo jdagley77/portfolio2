@@ -21,22 +21,41 @@ nav ul {
   text-align: center;
   margin: 0;
   transition: max-height 0.4s;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav ul li {
   display: inline-block;
   padding: 20px;
   color: blue;
+  font-size: 1.1em;
 }
 
 nav ul li:hover {
-  background-color: #eeee00;
+  background-color:   #999999;
   color: blue;
   border-radius: 10px;
 }
 
 .nav-logo {
   font-weight: bold;
+  float: left;
+}
+
+.nav-icons {
+  padding: 1.5% 5% 1.5% 0;
+}
+
+.nav-icons a {
+  text-decoration: none;
+  color: blue;
+  padding-left: 10px;
+}
+
+.nav-icons a:hover {
+  color: #eeee00;
+  text-decoration: none;
 }
 
 .handle {
@@ -56,6 +75,7 @@ nav ul li:hover {
     background-color: black;
     margin: 6px 0;
 }
+
 
 
 section {
@@ -85,6 +105,7 @@ section {
     background-color: lightgrey;
     text-align: center;
   }
+
 }
 
 /*nav end, about start*/
@@ -133,6 +154,7 @@ section {
   
   .profile {
     margin: 0 auto;
+    max-width: 60%;
   }
   
 }

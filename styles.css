@@ -146,8 +146,8 @@ section {
   max-height: 50%;
 }
 
-.strong-intro {
-  color: #eeee00;
+.intro-color {
+  color: yellow;
 }
 
 .profile {
@@ -176,19 +176,42 @@ section {
   
 }
 
-
 #portfolio {
-  display: inline-block;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   text-align: center;
-  background-color: #fcf8e3;
+  padding: 30px;
+  border-top: solid grey 1px;
+  background-color: lightgrey;
 }
 
+.work-header {
+  flex: 1 100%;
+  padding-bottom: 20px;
+}
+
+
+.work-examples {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-wrap;
+}
 
 .work {
-  height: 45%;
-  width: 45%;
   padding: 30px;
+  border: 1px black;
+  flex: 50%;
+
 }
+
+
+figcaption {
+  display: flex;
+  flex-direction: row;
+  color: blue;
+}
+
 
 @media (max-width: 1000px) {
   #portfolio { 
@@ -213,6 +236,7 @@ img.work {
   padding: 30px;
   border-top: solid grey 1px;
   background-color: lightgrey;
+  height: 100%;
 }
 
 #contact-header {

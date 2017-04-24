@@ -40,28 +40,62 @@
 </nav>
 
 <div id="intro">
-  <h1>Hi, I'm Jack. Front End Developer and UX Designer. </h1>
+  <h1>Hi, I'm <span class="intro-color">Jack</span>. Front End Developer and UX Designer. </h1>
 </div>
 
 <div id="about">
   <div class="intro-text">
-  <h1>Front-End Developer and UX Designer with experience designing web apps, creative direction, and project management.</h1>
-  <p><strong>Skills</strong>: Ruby on Rails, Javascript, jQuery, CSS3, HTML5, UX Design.</p>
+    <h1><span class="intro-color">Front End Developer</span> and <span class="intro-color">UX Designer</span> with experience designing web apps, creative direction, and project management.</h1>
+    <p><strong>Skills</strong>: Ruby on Rails, Javascript, jQuery, CSS3, HTML5, UX Design.</p>
   </div>
   <img class="profile" src="http://res.cloudinary.com/dtk22y6kq/image/upload/v1492725930/bluepic_cxz9qi.jpg">
 </div>
 
 <div id="portfolio">
-  <h1>Recent Work</h1>
-       <a href="http://www.commoncontext.info/" target="_blank"><img class="work" src="http://res.cloudinary.com/dtk22y6kq/image/upload/v1492018434/ccsplash_copy_jg775o.png"></a>
-   <a href="https://peaceful-coast-11561.herokuapp.com/" target="_blank"><img class="work" src="http://res.cloudinary.com/dtk22y6kq/image/upload/v1492018434/enlightenup_copy_hb9ki1.png"></a>
-  <a href="https://github.com/jdagley77/music_blog" target="_blank"><img class="work" src="http://res.cloudinary.com/dtk22y6kq/image/upload/v1492019423/Screen_Shot_2017-04-12_at_10.48.29_AM_fpihlm.png"></a>
-  <a href="https://github.com/jdagley77/read_my_feelings" target="_blank"><img class="work" src="http://res.cloudinary.com/dtk22y6kq/image/upload/v1492018434/readmyfeelings_copy_s9uafv.png"></a>
+  <div class="work-header">
+    <h1>Recent Work</h1>
+  </div>
+  <div class="work-examples">
+    <figure class="work">
+      <a href="http://www.commoncontext.info/" target="_blank">
+        <img src="http://res.cloudinary.com/dtk22y6kq/image/upload/v1492018434/ccsplash_copy_jg775o.png" alt="CommonContext" width="500" height="350"></a>
+        <figcaption>
+          <div class="work-description">Ruby on Rails // Materialize</div>
+          <h4>Web app - connecting mentors with mentees</h4>
+        </figcaption>
+    </figure>
+
+    <figure class="work">
+      <a href="https://peaceful-coast-11561.herokuapp.com/" target="_blank">
+        <img src="http://res.cloudinary.com/dtk22y6kq/image/upload/v1492018434/enlightenup_copy_hb9ki1.png" alt="EnlightenUp" width="500" height="350"></a>
+        <figcaption>
+          <div class="work-description">Ruby on Rails // Bootstrap</div>
+          <h4>Web app - Scheduling appointments between teachers and students</h4>
+        </figcaption>
+    </figure>
+
+    <figure class="work">
+      <a href="https://github.com/jdagley77/music_blog" target="_blank">
+        <img src="http://res.cloudinary.com/dtk22y6kq/image/upload/v1492019423/Screen_Shot_2017-04-12_at_10.48.29_AM_fpihlm.png" alt="EnlightenUp" width="500" height="350"></a>
+        <figcaption>
+          <div class="work-description">Ruby on Rails</div>
+          <h4>Blog and news source</h4>
+        </figcaption>
+    </figure>
+
+    <figure class="work">
+      <a href="https://github.com/jdagley77/read_my_feelings" target="_blank">
+        <img src="http://res.cloudinary.com/dtk22y6kq/image/upload/v1492018434/readmyfeelings_copy_s9uafv.png" width="500" height="350"></a>
+        <figcaption>
+          <div class="work-description">Ruby on Rails // Javascript // AJAX // jQuery</div>
+          <h4>Book search widget</h4>
+        </figcaption>
+    </figure>
+  </div>
 </div>
 
 <div id="contact">
   <h1 id="contact-header">Contact</h1>
-  <!-- <div class="flex"> -->
     <form id="contact-form">
       <input type="text" placeholder="Name"><br>
       <input type="text" placeholder="Email Address"><br>
@@ -73,7 +107,6 @@
       <p>Whether you'd like to talk tech, Warriors basketball, US Soccer, good taco joints, smoothie recipes, or just to say hi, please feel free to send me a message, or get in touch via the social media links above. 
     </p>
   </aside>
-  <!-- </div> -->
 </div>
 
 

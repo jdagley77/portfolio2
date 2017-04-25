@@ -28,19 +28,21 @@ nav ul {
 nav ul li {
   display: inline-block;
   padding: 20px;
-  color: blue;
+  color: #4492DE;
   font-size: 1.1em;
 }
 
 nav ul li:hover {
   background-color:   #999999;
-  color: blue;
+  color: yellow;
   border-radius: 10px;
 }
 
 .nav-logo {
   font-weight: bold;
   float: left;
+  font-family: "Satisfy", cursive;
+  font-size: 2em;
 }
 
 .nav-icons {
@@ -49,12 +51,12 @@ nav ul li:hover {
 
 .nav-icons a {
   text-decoration: none;
-  color: blue;
+  color: #4492DE;
   padding-left: 10px;
 }
 
 .nav-icons a:hover {
-  color: #eeee00;
+  color: yellow;
   text-decoration: none;
 }
 

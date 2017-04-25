@@ -173,7 +173,6 @@ section {
     margin: 0 auto;
     max-width: 60%;
   }
-  
 }
 
 #portfolio {
@@ -224,16 +223,19 @@ figcaption {
   #portfolio { 
     display: flex;
     flex-direction: column;
-    padding: 0px;
-    margin: 0;
   }
 
-img.work {
-  height: 85%;
-  width: 85%;
-  padding: 30px;
-}
+  .work-header {
+    flex: 1 15%;
+    padding-bottom: 0px;
+  }
 
+
+  img.work {
+    height: 85%;
+    width: 85%;
+    padding: 30px;
+  }
 }
 
 #contact {
@@ -243,7 +245,6 @@ img.work {
   padding: 30px;
   border-top: solid grey 1px;
   background-color: lightgrey;
-  /*height: 100%;*/
 }
 
 #contact-header {

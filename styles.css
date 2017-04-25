@@ -28,19 +28,21 @@ nav ul {
 nav ul li {
   display: inline-block;
   padding: 20px;
-  color: blue;
+  color: #4492DE;
   font-size: 1.1em;
 }
 
+
 nav ul li:hover {
-  background-color:   #999999;
-  color: blue;
+  color: yellow;
   border-radius: 10px;
 }
 
 .nav-logo {
   font-weight: bold;
   float: left;
+  font-family: "Satisfy", cursive;
+  font-size: 2em;
 }
 
 .nav-icons {
@@ -49,13 +51,17 @@ nav ul li:hover {
 
 .nav-icons a {
   text-decoration: none;
-  color: blue;
-  padding-left: 10px;
+  color: #4492DE;
+  padding: 5px 0px 0px 10px;
 }
 
 .nav-icons a:hover {
-  color: #eeee00;
+  color: yellow;
   text-decoration: none;
+}
+
+nav ul li:not(.nav-logo) {
+  padding-top: 25px;
 }
 
 .handle {
@@ -64,7 +70,7 @@ nav ul li:hover {
   text-align: right;
   padding: 15px 10px;
   cursor: pointer;
-  color: blue;
+  color: #4492DE;
   font-weight: bold;
   display: none;
 }
@@ -84,7 +90,7 @@ section {
   margin: 0 auto;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   nav ul {
     max-height: 0;
   }
@@ -102,6 +108,7 @@ section {
     display: block;
     background-color: lightgrey;
     text-align: center;
+    margin-left: 15px;
   }
 
 }
@@ -173,7 +180,6 @@ section {
     margin: 0 auto;
     max-width: 60%;
   }
-  
 }
 
 #portfolio {
@@ -224,16 +230,19 @@ figcaption {
   #portfolio { 
     display: flex;
     flex-direction: column;
-    padding: 0px;
-    margin: 0;
   }
 
-img.work {
-  height: 85%;
-  width: 85%;
-  padding: 30px;
-}
+  .work-header {
+    flex: 1 15%;
+    padding-bottom: 0px;
+  }
 
+
+  img.work {
+    height: 85%;
+    width: 85%;
+    padding: 30px;
+  }
 }
 
 #contact {
@@ -243,7 +252,6 @@ img.work {
   padding: 30px;
   border-top: solid grey 1px;
   background-color: lightgrey;
-  height: 100%;
 }
 
 #contact-header {
@@ -282,18 +290,20 @@ textarea[placeholder] {
 }
 
 input[type="button"] {
-  border: 1px solid blue;
-  font-size: 2em;
-  border-radius: 5px;
-  color: grey;
-  padding: .2em;
+  color: #4492DE;
+  padding-top: 20px;
   margin-top: 20px;
   color: grey;
+  border-bottom: none;
 }
 
-input[type="button"]:hover {
-  background-color: #eeee00;
-  color: blue;
+i.fa.fa-paper-plane-o.fa-3x {
+  color: grey;
+  cursor: pointer;
+}
+
+i.fa.fa-paper-plane-o.fa-3x:hover {
+  color: yellow;
 }
 
 

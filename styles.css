@@ -267,7 +267,7 @@ input {
   border: none;
   outline: none;
   background: none;
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid #4492DE;
   margin-bottom: 30px;
   padding: 10px;
 }

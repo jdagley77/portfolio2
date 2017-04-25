@@ -68,31 +68,21 @@ var navScroll = function() {
     })
 }
 
-// var picHover = function() {
-//   var $about = $("#about")
-//   var $pic = $("img.profile");
-//   $about.delegate($pic, "hover", function(e) {
-//     if (e.type==="mouseover") {
-//     $pic.attr("src", "http://res.cloudinary.com/dtk22y6kq/image/upload/v1492725327/tahoe_exl8rx.png");
-//     }
-//     else {
-//     $pic.attr("src", "http://res.cloudinary.com/dtk22y6kq/image/upload/v1492725930/bluepic_cxz9qi.jpg");
-//     }
-//   }
-// }
-
-
 
 var picHover = function() {
-  // var $about = $("#about")
-  var $pic = $("img.profile");
-  $pic.hover(function()
-  {
-    $pic.attr("src", "http://res.cloudinary.com/dtk22y6kq/image/upload/v1492725327/tahoe_exl8rx.png");
-  },
-  function()
-  {
-    $pic.attr("src", "http://res.cloudinary.com/dtk22y6kq/image/upload/v1492725930/bluepic_cxz9qi.jpg");
-  })
+
+var $pic = $("img.profile");
+
+  $("#about").on({ 
+
+      mouseenter: function () {
+        $pic.attr("src", "http://res.cloudinary.com/dtk22y6kq/image/upload/v1492725327/tahoe_exl8rx.png");
+      },
+      mouseleave: function () {
+        $pic.attr("src", "http://res.cloudinary.com/dtk22y6kq/image/upload/v1492725930/bluepic_cxz9qi.jpg");
+      }
+  });
 }
+
+
 

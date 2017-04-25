@@ -32,8 +32,8 @@ nav ul li {
   font-size: 1.1em;
 }
 
+
 nav ul li:hover {
-  background-color:   #999999;
   color: yellow;
   border-radius: 10px;
 }
@@ -52,12 +52,16 @@ nav ul li:hover {
 .nav-icons a {
   text-decoration: none;
   color: #4492DE;
-  padding-left: 10px;
+  padding: 5px 0px 0px 10px;
 }
 
 .nav-icons a:hover {
   color: yellow;
   text-decoration: none;
+}
+
+nav ul li:not(.nav-logo) {
+  padding-top: 25px;
 }
 
 .handle {
@@ -66,7 +70,7 @@ nav ul li:hover {
   text-align: right;
   padding: 15px 10px;
   cursor: pointer;
-  color: blue;
+  color: #4492DE;
   font-weight: bold;
   display: none;
 }
@@ -86,7 +90,7 @@ section {
   margin: 0 auto;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   nav ul {
     max-height: 0;
   }
@@ -104,6 +108,7 @@ section {
     display: block;
     background-color: lightgrey;
     text-align: center;
+    margin-left: 15px;
   }
 
 }
@@ -285,18 +290,20 @@ textarea[placeholder] {
 }
 
 input[type="button"] {
-  border: 1px solid blue;
-  font-size: 2em;
-  border-radius: 5px;
-  color: grey;
-  padding: .2em;
+  color: #4492DE;
+  padding-top: 20px;
   margin-top: 20px;
   color: grey;
+  border-bottom: none;
 }
 
-input[type="button"]:hover {
-  background-color: #eeee00;
-  color: blue;
+i.fa.fa-paper-plane-o.fa-3x {
+  color: grey;
+  cursor: pointer;
+}
+
+i.fa.fa-paper-plane-o.fa-3x:hover {
+  color: yellow;
 }
 
 

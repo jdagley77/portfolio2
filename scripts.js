@@ -14,6 +14,7 @@ $(document).ready(function () {
     scroll();
     navScroll();
     picHover();
+    thankYou();
 });
 
 var handle = function() {
@@ -95,13 +96,7 @@ var thankYou = function() {
     $.ajax({
       url: "https://formspree.io/jack.dagley77@gmail.com",
       method: "POST",
-      data: {
-        name:name,
-        _replyto:email,
-        email:email,
-        comments:comments,
-        _subject:"My form submission",
-      },
+      data: $("#contact-form").serialize(),
       dataType: "json",
       success:function() {
         console.log("success");

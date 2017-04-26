@@ -14,6 +14,7 @@ $(document).ready(function () {
     scroll();
     navScroll();
     picHover();
+    thankYou();
 });
 
 var handle = function() {
@@ -83,6 +84,26 @@ var $pic = $("img.profile");
       mouseleave: function () {
         $pic.attr("src", "http://res.cloudinary.com/dtk22y6kq/image/upload/v1492725930/bluepic_cxz9qi.jpg");
       }
+  });
+}
+
+var thankYou = function() {
+  $("#contact-form").on("submit", function(e) {
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var message = $("#message").val();
+
+    $.ajax({
+      url: "https://formspree.io/jack.dagley77@gmail.com",
+      method: "POST",
+      data: $("#contact-form").serialize(),
+      dataType: "json",
+      success:function() {
+        console.log("success");
+        $("#formBlock").hide();
+        $("#thankyou").show();
+      }
+    });
   });
 }
 

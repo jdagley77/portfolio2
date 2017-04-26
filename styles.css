@@ -343,21 +343,29 @@ input {
   margin-bottom: 30px;
   padding: 10px;
   font-size: 2em;
+  color: white;
 }
 
 input[placeholder], input[value], textarea[placeholder] {
   font-size: 2em;
-  color: grey;
-}
-
-input[value]:hover {
-  color: yellow;
+  color: white;
 }
 
 input[value] {
   border: 1px solid #4492DE;
   border-radius: 5px;
+  background-color: #4492DE;
+
+  -webkit-transition-property:color, background-color; 
+  -webkit-transition-duration: .3s, .3s; 
+  -webkit-transition-timing-function: linear, ease-in;
 }
+
+input[value]:hover {
+  background-color: yellow;
+  color: blue;
+}
+
 
 textarea {
   border: none;

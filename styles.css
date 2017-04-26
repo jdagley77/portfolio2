@@ -75,6 +75,10 @@ nav ul li:not(.nav-logo) {
   display: none;
 }
 
+i.fa.fa-bars.fa-2x {
+  margin-left: 6%;
+}
+
 .burger {
     width: 35px;
     height: 5px;
@@ -108,10 +112,67 @@ section {
     display: block;
     background-color: lightgrey;
     text-align: center;
-    margin-left: 15px;
   }
 
 }
+
+/* Smartphones (portrait and landscape) ———– */
+@media only screen 
+  and (min-device-width : 320px)
+  and (max-device-width : 480px) { 
+  
+  nav ul {
+    max-height: 0;
+  }
+
+  .showing {
+    max-height: 20em;
+  }
+
+  nav ul li {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .handle {
+    display: block;
+    background-color: lightgrey;
+    text-align: center;
+  }
+
+  i.fa.fa-bars.fa-2x {
+  margin-right: 5%;
+  }
+}
+
+/* iPads (portrait and landscape) ———– */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  nav ul {
+    max-height: 0;
+  }
+
+  .showing {
+    max-height: 20em;
+  }
+
+  nav ul li {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .handle {
+    display: block;
+    background-color: lightgrey;
+    text-align: center;
+  }
+
+  i.fa.fa-bars.fa-2x {
+    margin-right: 5%;
+  }
+}
+
 
 /*nav end*/
 /*intro section */

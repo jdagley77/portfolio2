@@ -16,108 +16,115 @@
   <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
 </head>
 <body>
-
-  <nav>
-    <ul>
-        <a href="#"><li class="nav-logo">Jack Dagley</li></a>
-        <div>
-          <a href="#"><li id="xabout" class="active nav-right">About</li></a>
-          <a href="#"><li id="xportfolio" class="nav-right">Portfolio</li></a>
-          <a href="#"><li id="xcontact" class="nav-right">Contact</li></a>
+  <main>
+      <nav>
+        <ul>
+            <a href="#"><li class="nav-logo">Jack Dagley</li></a>
+            <div>
+              <a href="#"><li id="xabout" class="active nav-right">About</li></a>
+              <a href="#"><li id="xportfolio" class="nav-right">Portfolio</li></a>
+              <a href="#"><li id="xcontact" class="nav-right">Contact</li></a>
+            </div>
+              <div class="nav-icons">
+                <a href="https://www.facebook.com/jack.dagley.14" target="_blank" class="fa fa-facebook fa-2x"></a>
+                <a href="https://www.linkedin.com/in/jdagley/" target="_blank" class="fa fa-linkedin fa-2x"></a>
+                <a href="https://github.com/jdagley77" target="_blank" class="fa fa-github fa-2x"></a>
+              </div>
+        </ul>
+        <div class="handle">
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
         </div>
-          <div class="nav-icons">
-            <a href="https://www.facebook.com/jack.dagley.14" target="_blank" class="fa fa-facebook fa-2x"></a>
-            <a href="https://www.linkedin.com/in/jdagley/" target="_blank" class="fa fa-linkedin fa-2x"></a>
-            <a href="https://github.com/jdagley77" target="_blank" class="fa fa-github fa-2x"></a>
-          </div>
-    </ul>
-    <div class="handle">
-      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      
+    </nav>
+
+    <div id="intro">
+      <h1>Hi, I'm <span class="intro-color">Jack</span>. Front End Developer and UX Designer. </h1>
     </div>
-  
-</nav>
 
-<div id="intro">
-  <h1>Hi, I'm <span class="intro-color">Jack</span>. Front End Developer and UX Designer. </h1>
-</div>
-
-<div id="about">
-  <div class="intro-text">
-    <h1>I have <span class="intro-color">experience</span> with designing web apps, creative direction, and project management.</h1>
-    <p><strong>Skills</strong>: Ruby on Rails, Sinatra, Javascript, jQuery, CSS3, HTML5, UX Design.</p>
-  </div>
-  <img class="profile" src="http://res.cloudinary.com/dtk22y6kq/image/upload/v1492725930/bluepic_cxz9qi.jpg">
-</div>
-
-<div id="portfolio">
-  <div class="work-header">
-    <h1>Recent Work</h1>
-  </div>
-  <div class="work-examples">
-    <figure class="work">
-      <a href="http://www.commoncontext.info/" target="_blank">
-        <img src="http://res.cloudinary.com/dtk22y6kq/image/upload/v1492018434/ccsplash_copy_jg775o.png" alt="CommonContext" width="500" height="350"></a>
-        <figcaption>
-          <div class="work-description">Ruby on Rails // Materialize</div>
-          <h4>Web app connecting mentors with mentees</h4>
-        </figcaption>
-    </figure>
-
-    <figure class="work">
-      <a href="https://peaceful-coast-11561.herokuapp.com/" target="_blank">
-        <img src="http://res.cloudinary.com/dtk22y6kq/image/upload/v1492018434/enlightenup_copy_hb9ki1.png" alt="EnlightenUp" width="500" height="350"></a>
-        <figcaption>
-          <div class="work-description">Ruby on Rails // Bootstrap</div>
-          <h4>Appointment scheduling for tutors and students</h4>
-        </figcaption>
-    </figure>
-
-    <figure class="work">
-      <a href="https://github.com/jdagley77/music_blog" target="_blank">
-        <img src="http://res.cloudinary.com/dtk22y6kq/image/upload/v1492019423/Screen_Shot_2017-04-12_at_10.48.29_AM_fpihlm.png" alt="EnlightenUp" width="500" height="350"></a>
-        <figcaption>
-          <div class="work-description">Ruby on Rails</div>
-          <h4>Blog and news source</h4>
-        </figcaption>
-    </figure>
-
-    <figure class="work">
-      <a href="https://github.com/jdagley77/read_my_feelings" target="_blank">
-        <img src="http://res.cloudinary.com/dtk22y6kq/image/upload/v1492018434/readmyfeelings_copy_s9uafv.png" width="500" height="350"></a>
-        <figcaption>
-          <div class="work-description">Sinatra // Javascript // AJAX // jQuery</div>
-          <h4>Book search widget</h4>
-        </figcaption>
-    </figure>
-  </div>
-</div>
-
-<div id="contact">
-  <h1 id="contact-header">Contact</h1>
-    <div id="form-block">
-      <form id="contact-form" method="post" action="https://formspree.io/jack.dagley77@gmail.com" method="POST">
-        <input type="text" placeholder="Your Name" name="name" id="name"><br>
-        <input type="email" placeholder="Your Email" name="_replyto" id="email"><br>
-        <textarea type="text" placeholder="Your Message" name="message" id="message"></textarea><br><br>
-        <input type="submit" value="Send"></input>
-      </form>
+    <div id="about">
+      <div class="intro-text">
+        <h1>I have <span class="intro-color">experience</span> with designing web apps, creative direction, and project management.</h1>
+        <p><strong>Skills</strong>: Ruby on Rails, Sinatra, Javascript, jQuery, CSS3, HTML5, UX Design.</p>
+      </div>
+      <img class="profile" src="http://res.cloudinary.com/dtk22y6kq/image/upload/v1492725930/bluepic_cxz9qi.jpg">
     </div>
-    <div id="thankyou" style="display:none">
-        <p>
-            Thank you for your message.
-        </p>
+
+    <div id="portfolio">
+      <div class="work-header">
+        <h1>Recent Work</h1>
+      </div>
+      <div class="work-examples">
+        <figure class="work">
+          <a href="http://www.commoncontext.info/" target="_blank">
+            <img src="http://res.cloudinary.com/dtk22y6kq/image/upload/v1492018434/ccsplash_copy_jg775o.png" alt="CommonContext" width="500" height="350"></a>
+            <figcaption>
+              <div class="work-description">Ruby on Rails // Materialize</div>
+              <h4>Web app connecting mentors with mentees</h4>
+            </figcaption>
+        </figure>
+
+        <figure class="work">
+          <a href="https://peaceful-coast-11561.herokuapp.com/" target="_blank">
+            <img src="http://res.cloudinary.com/dtk22y6kq/image/upload/v1492018434/enlightenup_copy_hb9ki1.png" alt="EnlightenUp" width="500" height="350"></a>
+            <figcaption>
+              <div class="work-description">Ruby on Rails // Bootstrap</div>
+              <h4>Appointment scheduling for tutors and students</h4>
+            </figcaption>
+        </figure>
+
+        <figure class="work">
+          <a href="https://github.com/jdagley77/music_blog" target="_blank">
+            <img src="http://res.cloudinary.com/dtk22y6kq/image/upload/v1492019423/Screen_Shot_2017-04-12_at_10.48.29_AM_fpihlm.png" alt="EnlightenUp" width="500" height="350"></a>
+            <figcaption>
+              <div class="work-description">Ruby on Rails</div>
+              <h4>Blog and news source</h4>
+            </figcaption>
+        </figure>
+
+        <figure class="work">
+          <a href="https://github.com/jdagley77/read_my_feelings" target="_blank">
+            <img src="http://res.cloudinary.com/dtk22y6kq/image/upload/v1492018434/readmyfeelings_copy_s9uafv.png" width="500" height="350"></a>
+            <figcaption>
+              <div class="work-description">Sinatra // Javascript // AJAX // jQuery</div>
+              <h4>Book search widget</h4>
+            </figcaption>
+        </figure>
+      </div>
     </div>
-</div>
 
+    <div id="contact">
+      <h1 id="contact-header">Contact</h1>
+        <div id="form-block">
+          <form id="contact-form" method="post" action="https://formspree.io/jack.dagley77@gmail.com" method="POST">
+            <input type="text" placeholder="Your Name" name="name" id="name"><br>
+            <input type="email" placeholder="Your Email" name="_replyto" id="email"><br>
+            <textarea type="text" placeholder="Your Message" name="message" id="message"></textarea><br><br>
+            <input type="submit" value="Send"></input>
+          </form>
+        </div>
+        <div id="thankyou" style="display:none">
+            <p>
+                Thank you for your message.
+            </p>
+        </div>
+    </div>
+    <footer>
+      <div class="footer-icons">
+          <a href="https://www.facebook.com/jack.dagley.14" target="_blank" class="fa fa-facebook fa-2x"></a>
+          <a href="https://www.linkedin.com/in/jdagley/" target="_blank" class="fa fa-linkedin fa-2x"></a>
+          <a href="https://github.com/jdagley77" target="_blank" class="fa fa-github fa-2x"></a>
+      </div>
+    </footer>
+  </main>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-
-<footer>
-  <div class="footer-icons">
-      <a href="https://www.facebook.com/jack.dagley.14" target="_blank" class="fa fa-facebook fa-2x"></a>
-      <a href="https://www.linkedin.com/in/jdagley/" target="_blank" class="fa fa-linkedin fa-2x"></a>
-      <a href="https://github.com/jdagley77" target="_blank" class="fa fa-github fa-2x"></a>
-  </div>
-</footer>
+  ga('create', 'UA-98204863-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
 </body>
 </html>

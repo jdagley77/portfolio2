@@ -263,7 +263,7 @@ and (max-device-width : 1024px) {
 .work-header {
   flex: 1 100%;
   padding-bottom: 20px;
-  font-family: "Satisfy", cursive;
+  /*font-family: "Satisfy", cursive;*/
 }
 
 
@@ -328,11 +328,14 @@ figcaption {
 #contact-header {
   flex: 1 100%;
   padding-bottom: 20px;
-  font-family: "Satisfy", cursive;
+  /*font-family: "Satisfy", cursive;*/
 }
 
-#contact-form, #contact-aside {
-  flex: 1;
+
+#contact-form {
+  background-color: #dbdbdb;
+  padding: 40px;
+  border-radius: 10px;
 }
 
 input {
@@ -347,16 +350,18 @@ input {
   text-align: center;
 }
 
-input[placeholder], input[value], textarea[placeholder] {
+input[placeholder], textarea[placeholder] {
   font-size: 2em;
-  color: white;
+  color: #4492DE;
   text-align: center;
 }
 
 input[value] {
+  font-size: 2em;
   border: 1px solid #4492DE;
   border-radius: 5px;
   background-color: #4492DE;
+  color: white;
 
   -webkit-transition-property:color, background-color; 
   -webkit-transition-duration: .3s, .3s; 
@@ -433,26 +438,18 @@ footer {
   background-color: lightgrey;
 }
 
-.icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 
-.icons li {
-  margin-right: 7%;
-  list-style-type: none;
-}
-
-.icons a {
+.footer-icons a {
   text-decoration: none;
-  color: white;
+  color: #4492DE;
+  padding: 5px 0px 0px 10px;
 }
 
-.icons a:hover {
-  color: #eeee00;
+.footer-icons a:hover {
+  color: yellow;
   text-decoration: none;
 }
+
 
 @media (max-width: 1000px) {
   #social {

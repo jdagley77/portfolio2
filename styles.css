@@ -340,10 +340,16 @@ input {
   border-bottom: 1px solid #4492DE;
   margin-bottom: 30px;
   padding: 10px;
+  font-size: 2em;
 }
 
-input[placeholder] {
+input[placeholder], input[value], textarea[placeholder] {
   font-size: 2em;
+  color: grey;
+}
+
+input[value]:hover {
+  color: yellow;
 }
 
 textarea {
@@ -355,17 +361,17 @@ textarea {
   margin-bottom: 30px;
 }
 
-textarea[placeholder] {
+/*textarea[placeholder] {
   font-size: 2em;
-}
+}*/
 
-input[type="button"] {
+/*input[type="button"] {
   color: #4492DE;
   padding-top: 20px;
   margin-top: 20px;
   color: grey;
   border-bottom: none;
-}
+}*/
 
 i.fa.fa-paper-plane-o.fa-3x {
   color: grey;
@@ -377,12 +383,12 @@ i.fa.fa-paper-plane-o.fa-3x:hover {
 }
 
 
-#contact-aside {
+/*#contact-aside {
   font-size: 2em;
   color: grey;
   text-align: left;
   margin-left: 5%;
-}
+}*/
 
 @media (max-width: 1000px) {
   #contact {

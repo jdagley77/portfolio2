@@ -102,7 +102,7 @@ var thankYou = function() {
       dataType: "json",
       success:function() {
         console.log("success");
-        $("#formBlock").hide();
+        $("#form-block").hide();
         $("#thankyou").show();
       }
     });

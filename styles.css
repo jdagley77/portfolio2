@@ -361,34 +361,12 @@ textarea {
   margin-bottom: 30px;
 }
 
-/*textarea[placeholder] {
-  font-size: 2em;
-}*/
-
-/*input[type="button"] {
+#thankyou {
+  font-size: 3em;
   color: #4492DE;
-  padding-top: 20px;
-  margin-top: 20px;
-  color: grey;
-  border-bottom: none;
-}*/
-
-i.fa.fa-paper-plane-o.fa-3x {
-  color: grey;
-  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
 }
-
-i.fa.fa-paper-plane-o.fa-3x:hover {
-  color: yellow;
-}
-
-
-/*#contact-aside {
-  font-size: 2em;
-  color: grey;
-  text-align: left;
-  margin-left: 5%;
-}*/
 
 @media (max-width: 1000px) {
   #contact {

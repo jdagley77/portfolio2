@@ -344,11 +344,13 @@ input {
   padding: 10px;
   font-size: 2em;
   color: white;
+  text-align: center;
 }
 
 input[placeholder], input[value], textarea[placeholder] {
   font-size: 2em;
   color: white;
+  text-align: center;
 }
 
 input[value] {

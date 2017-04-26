@@ -263,6 +263,7 @@ and (max-device-width : 1024px) {
 .work-header {
   flex: 1 100%;
   padding-bottom: 20px;
+  font-family: "Satisfy", cursive;
 }
 
 
@@ -327,6 +328,7 @@ figcaption {
 #contact-header {
   flex: 1 100%;
   padding-bottom: 20px;
+  font-family: "Satisfy", cursive;
 }
 
 #contact-form, #contact-aside {
@@ -337,7 +339,7 @@ input {
   border: none;
   outline: none;
   background: none;
-  border-bottom: 1px solid #4492DE;
+  border-bottom: 1px solid yellow;
   margin-bottom: 30px;
   padding: 10px;
   font-size: 2em;
@@ -352,17 +354,22 @@ input[value]:hover {
   color: yellow;
 }
 
+input[value] {
+  border: 1px solid #4492DE;
+  border-radius: 5px;
+}
+
 textarea {
   border: none;
   outline: none;
   background: none;
-  border-bottom: 1px solid #4492DE;
+  border-bottom: 1px solid yellow;
   font-size: 3em;
   margin-bottom: 30px;
 }
 
 #thankyou {
-  font-size: 3em;
+  font-size: 1.5em;
   color: #4492DE;
   text-align: center;
   margin: 0 auto;

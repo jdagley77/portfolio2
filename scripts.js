@@ -89,6 +89,8 @@ var $pic = $("img.profile");
 
 var thankYou = function() {
   $("#contact-form").on("submit", function(e) {
+    e.preventDefault();
+
     var name = $("#name").val();
     var email = $("#email").val();
     var message = $("#message").val();

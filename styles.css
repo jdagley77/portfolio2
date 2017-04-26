@@ -356,7 +356,7 @@ textarea {
   border: none;
   outline: none;
   background: none;
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid #4492DE;
   font-size: 3em;
   margin-bottom: 30px;
 }

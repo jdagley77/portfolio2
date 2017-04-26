@@ -1,5 +1,6 @@
 body {
   background-color: grey;
+  /*width: 100%;*/
 }
 
 /*new nav*/
@@ -95,6 +96,7 @@ section {
 }
 
 @media (max-width: 600px) {
+
   nav ul {
     max-height: 0;
   }
@@ -121,6 +123,11 @@ section {
   and (min-device-width : 320px)
   and (max-device-width : 480px) { 
   
+  nav {
+      position: fixed !important;
+  }
+
+
   nav ul {
     max-height: 0;
   }
@@ -306,9 +313,11 @@ figcaption {
   }
 }
 
+
 #contact {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   text-align: center;
   padding: 30px;
   border-top: solid grey 1px;

@@ -9,10 +9,11 @@ $(document).ready(function () {
         }
     });
 
-  handle();
-  scroll();
-  navScroll();
-  picHover();
+
+    handle();
+    scroll();
+    navScroll();
+    picHover();
 });
 
 var handle = function() {
@@ -23,23 +24,24 @@ $('.handle').on('click', function(){
 
 
 var scroll = function() { 
-  $("#xabout").on("click", function(){
-    $("body").animate({
-      scrollTop: $("#about").offset().top
-      }, 900);
-  });
+  
+    $("#xabout").on("click", function(){
+      $("body").animate({
+        scrollTop: $("#about").offset().top
+        }, 900);
+    });
 
-  $("#xportfolio").on("click", function(){
-    $("body").animate({
-      scrollTop: $("#portfolio").offset().top
-      }, 900);
-  });
+    $("#xportfolio").on("click", function(){
+      $("body").animate({
+        scrollTop: $("#portfolio").offset().top
+        }, 900);
+    });
 
-   $("#xcontact").on("click", function(){
-    $("body").animate({
-      scrollTop: $("#contact").offset().top
-      }, 900);
-  });
+     $("#xcontact").on("click", function(){
+      $("body").animate({
+        scrollTop: $("#contact").offset().top
+        }, 900);
+    });
 }
 
 // if the current scroll top is greater than the lastscrolltop

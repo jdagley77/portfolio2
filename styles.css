@@ -1,5 +1,6 @@
 body {
   background-color: grey;
+  /*width: 100%;*/
 }
 
 /*new nav*/
@@ -95,6 +96,7 @@ section {
 }
 
 @media (max-width: 600px) {
+
   nav ul {
     max-height: 0;
   }
@@ -121,6 +123,11 @@ section {
   and (min-device-width : 320px)
   and (max-device-width : 480px) { 
   
+  nav {
+      position: fixed !important;
+  }
+
+
   nav ul {
     max-height: 0;
   }
@@ -306,9 +313,11 @@ figcaption {
   }
 }
 
+
 #contact {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   text-align: center;
   padding: 30px;
   border-top: solid grey 1px;
@@ -331,10 +340,16 @@ input {
   border-bottom: 1px solid #4492DE;
   margin-bottom: 30px;
   padding: 10px;
+  font-size: 2em;
 }
 
-input[placeholder] {
+input[placeholder], input[value], textarea[placeholder] {
   font-size: 2em;
+  color: grey;
+}
+
+input[value]:hover {
+  color: yellow;
 }
 
 textarea {
@@ -346,17 +361,17 @@ textarea {
   margin-bottom: 30px;
 }
 
-textarea[placeholder] {
+/*textarea[placeholder] {
   font-size: 2em;
-}
+}*/
 
-input[type="button"] {
+/*input[type="button"] {
   color: #4492DE;
   padding-top: 20px;
   margin-top: 20px;
   color: grey;
   border-bottom: none;
-}
+}*/
 
 i.fa.fa-paper-plane-o.fa-3x {
   color: grey;
@@ -368,12 +383,12 @@ i.fa.fa-paper-plane-o.fa-3x:hover {
 }
 
 
-#contact-aside {
+/*#contact-aside {
   font-size: 2em;
   color: grey;
   text-align: left;
   margin-left: 5%;
-}
+}*/
 
 @media (max-width: 1000px) {
   #contact {

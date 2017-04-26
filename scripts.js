@@ -86,5 +86,31 @@ var $pic = $("img.profile");
   });
 }
 
+var thankYou = function() {
+  $("#contact-form").on("submit", function(e) {
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var message = $("#message").val();
+
+    $.ajax({
+      url: "https://formspree.io/jack.dagley77@gmail.com",
+      method: "POST",
+      data: {
+        name:name,
+        _replyto:email,
+        email:email,
+        comments:comments,
+        _subject:"My form submission",
+      },
+      dataType: "json",
+      success:function() {
+        console.log("success");
+        $("#formBlock").hide();
+        $("#thankyou").show();
+      }
+    });
+  });
+}
+
 
 

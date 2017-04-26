@@ -94,12 +94,14 @@
 
 <div id="contact">
   <h1 id="contact-header">Contact</h1>
-    <form id="contact-form" method="post" action="https://formspree.io/jack.dagley77@gmail.com" method="POST">
-      <input type="text" placeholder="Your Name"><br>
-      <input type="email" name="_replyto" placeholder="Your Email"><br>
-      <textarea type="text" placeholder="Your Message"></textarea><br><br>
-      <input type="submit" value="Send"></input>
-    </form>
+    <div id="form-block">
+      <form id="contact-form" method="post" action="https://formspree.io/jack.dagley77@gmail.com" method="POST">
+        <input type="text" placeholder="Your Name" id="name"><br>
+        <input type="email" name="_replyto" placeholder="Your Email" id="email"><br>
+        <textarea type="text" placeholder="Your Message" id="message"></textarea><br><br>
+        <input type="submit" value="Send"></input>
+      </form>
+    </div>
     <div id="thankyou" style="display:none">
         <p>
             Thank you for your message!

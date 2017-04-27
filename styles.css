@@ -372,7 +372,7 @@ input[value] {
 
 input[value]:hover {
   background-color: yellow;
-  color: blue;
+  color: #4492DE;
 }
 
 

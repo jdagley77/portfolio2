@@ -233,6 +233,17 @@ and (max-device-width : 1024px) {
   max-height: 50%;
 }
 
+.intro-text p {
+  transition: 2s ease-in-out;
+  opacity: 0;
+}
+
+#about:hover .intro-text p {
+  bottom: -36px;
+  opacity: 1;
+}
+
+
 @media (max-width: 1000px) {
   #about {
     display: flex;
@@ -268,6 +279,25 @@ and (max-device-width : 1024px) {
   /*font-family: "Satisfy", cursive;*/
 }
 
+/*hover effects on images*/
+figcaption {
+  transition: .5s ease-in-out;
+  opacity: 0;
+}
+
+figure.work:hover figcaption {
+  bottom: -36px;
+  opacity: 1;
+}
+
+figure.work img {
+  opacity: 1;
+  transition: .3s ease-in-out;
+}
+
+figure.work:hover img {
+  opacity: .7;
+}
 
 .work-examples {
   display: flex;

@@ -1,6 +1,7 @@
 body {
   background-color: grey;
-  /*width: 100%;*/
+  overflow-x:hidden;
+  width: 100%;
 }
 
 /*new nav*/
@@ -279,14 +280,15 @@ and (max-device-width : 1024px) {
   /*font-family: "Satisfy", cursive;*/
 }
 
+
 /*hover effects on images*/
 figcaption {
-  transition: .5s ease-in-out;
+  transition: 2s ease-in-out;
   opacity: 0;
 }
 
 figure.work:hover figcaption {
-  bottom: -36px;
+  top: 100px;
   opacity: 1;
 }
 
@@ -312,7 +314,8 @@ figure.work:hover img {
 .work img {
   border: 1px solid black;
   padding: 1px;  
-}
+  max-width: 100%;
+  }
 
 
 figcaption {
@@ -338,11 +341,13 @@ figcaption {
     padding-bottom: 0px;
   }
 
-
   img.work {
-    height: 85%;
-    width: 85%;
     padding: 30px;
+  }
+
+  .work-examples {
+    display: flex;
+    flex-direction: column;
   }
 }
 

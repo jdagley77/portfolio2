@@ -10,11 +10,12 @@ $(document).ready(function () {
     });
 
   if(!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent) )) {
-
     navScroll();
     picHover();
     thankYou();
     animateHeart();
+    scroll();
+    handle();
   } else {
     scroll();
     handle();

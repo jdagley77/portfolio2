@@ -159,6 +159,19 @@ section {
 
   .notransition {
     opacity: 1 !important;
+    padding: 20% 0% 20% 0%;
+  }
+
+  .profile {
+    margin-top: 10% !important;
+  }
+
+  .nav-icons {
+    font-size: 1.2em;
+  }
+
+  .intro-text {
+    padding-bottom: 100px !important;
   }
 }
 

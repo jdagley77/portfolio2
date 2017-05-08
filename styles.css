@@ -157,8 +157,8 @@ section {
     opacity: 0;
   }
 
-  figure {
-    opacity: 1;
+  .notransition {
+    opacity: 1 !important;
   }
 }
 

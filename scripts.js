@@ -15,10 +15,10 @@ $(document).ready(function () {
     picHover();
     thankYou();
     animateHeart();
-  }
-
+  } else {
     scroll();
     handle();
+    }
 });
 
 var handle = function() {

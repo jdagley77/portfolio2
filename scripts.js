@@ -15,6 +15,7 @@ $(document).ready(function () {
     navScroll();
     picHover();
     thankYou();
+    animateHeart();
 });
 
 var handle = function() {
@@ -108,6 +109,15 @@ var thankYou = function() {
     });
   });
 }
+
+
+
+var animateHeart = function() {
+    $('.fa-chevron-down').animate({
+        fontSize: $('.fa-chevron-down').css('fontSize') === '70px' ? '55px' : '70px'
+    }, 700, animateHeart);
+};
+
 
 
 

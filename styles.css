@@ -156,6 +156,10 @@ section {
   .fa-chevron-down {
     opacity: 0;
   }
+
+  figure {
+    opacity: 1;
+  }
 }
 
 /* iPads (portrait and landscape) ———– */

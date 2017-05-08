@@ -9,16 +9,16 @@ $(document).ready(function () {
         }
     });
 
+  if(!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent) )) {
 
-    handle();
     navScroll();
     picHover();
     thankYou();
     animateHeart();
+  }
 
-    if (!isMobile()) {
     scroll();
-    }
+    handle();
 });
 
 var handle = function() {

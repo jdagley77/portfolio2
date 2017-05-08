@@ -11,11 +11,14 @@ $(document).ready(function () {
 
 
     handle();
-    scroll();
     navScroll();
     picHover();
     thankYou();
     animateHeart();
+
+    if (!isMobile()) {
+    scroll();
+    }
 });
 
 var handle = function() {

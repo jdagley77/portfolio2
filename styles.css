@@ -152,6 +152,10 @@ section {
     margin-right: 5%;
     font-size: 2.5em;
   }
+
+  .fa-chevron-down {
+    opacity: 0;
+  }
 }
 
 /* iPads (portrait and landscape) ———– */

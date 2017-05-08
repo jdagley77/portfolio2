@@ -173,6 +173,10 @@ section {
   .intro-text {
     padding-bottom: 100px !important;
   }
+
+  #intro {
+    height: 100%;
+  }
 }
 
 /* iPads (portrait and landscape) ———– */

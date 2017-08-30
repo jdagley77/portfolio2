@@ -9,6 +9,10 @@ $(document).ready(function () {
         }
     });
 
+    $(".work").click(function(){
+      mixpanel.track("Work section clicked");
+    })
+
   if(!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent) )) {
     navScroll();
     picHover();

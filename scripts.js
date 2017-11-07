@@ -28,11 +28,46 @@ $(document).ready(function () {
     animateHeart();
     scroll();
     handle();
+    slideEffects();
   } else {
     scroll();
     handle();
     }
 });
+
+  var slideEffects = function() {
+    // loop over the items I want to slide in. within the loop, callback for on scroll to the slidein function
+    // add classes to left and right elements i want to slide in
+    // translate those classes to be off the page a bit and transparent
+    // in the function, i want them to slide in when they are half exposed, and to disappear when they are off the page
+    // to slide in, I will make a transition for those classes when they have class active
+
+    const sliders = document.querySelectorAll('.slide-in');
+    // slide in 
+    // console.log(sliders)
+    function slideIn(e) {
+      // console.log(e)
+      sliders.forEach(el => {
+        console.log(el)
+        // the point where the element will slide in at
+        const slideInAt = (window.scrollY + window.innerHeight) - el.height / 2;
+        const imageBottom = el.offsetTop + el.height;
+        // the point where the user is sliding over the slideInAt point for the particular element
+        const isHalfShowing = slideInAt > el.offsetTop;
+        // the point on the page where the scroll point is still not past the particular element
+        const isNotScrolledPast = window.scrollY < imageBottom;
+
+        if (isHalfShowing && isNotScrolledPast) {
+          el.classList.add('active');
+        } else {
+          el.classList.remove('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', slideIn);
+  };
+
 
 var handle = function() {
 $('.handle').on('click', function(){
@@ -126,13 +161,13 @@ var thankYou = function() {
   });
 }
 
-
-
 var animateHeart = function() {
     $('.fa-chevron-down').animate({
         fontSize: $('.fa-chevron-down').css('fontSize') === '70px' ? '55px' : '70px'
     }, 700, animateHeart);
 };
+
+
 
 
 

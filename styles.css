@@ -278,6 +278,27 @@ and (max-device-width : 1024px) {
   opacity: 1;
 }
 
+/*slide in effects*/
+.slide-in {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.slide-in.left {
+  transform: translateX(-50%);
+  /*transition: all 0.5s;*/
+}
+
+.slide-in.right {
+  transform: translateX(50%);
+  /*transition: all 0.5s;*/
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
 
 @media (max-width: 1000px) {
   #about {
@@ -327,8 +348,8 @@ figure.work:hover figcaption {
 }
 
 figure.work img {
-  opacity: 1;
-  transition: .3s ease-in-out;
+  opacity: 0;
+  transition: .7s ease-in-out;
 }
 
 figure.work:hover img {

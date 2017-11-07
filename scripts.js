@@ -126,13 +126,28 @@ var thankYou = function() {
   });
 }
 
-
-
 var animateHeart = function() {
     $('.fa-chevron-down').animate({
         fontSize: $('.fa-chevron-down').css('fontSize') === '70px' ? '55px' : '70px'
     }, 700, animateHeart);
 };
+
+// loop over the items I want to slide in. within the loop, callback for on scroll to the slidein function
+// add classes to left and right elements i want to slide in
+// translate those classes to be off the page a bit and transparent
+// in the function, i want them to slide in when they are half exposed, and to disappear when they are off the page
+// to slide in, I will make a transition for those classes
+
+
+// slide in 
+function slideIn(e) {
+// variable for isHalfShowing and isNotShowing
+// isHalfShowing is (scrollY + viewport) - img / 2
+// isNotShowing is when scrollY > img.offsetTop + img.height
+// if isHalfShowing add the class to transition
+// else take the class off
+}
+
 
 
 

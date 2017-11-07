@@ -10,8 +10,16 @@ $(document).ready(function () {
     });
 
     $(".work").click(function(){
-      mixpanel.track("Work section clicked");
+      mixpanel.track(
+        "Work section clicked",
+        {"test": "hi",
+        "specific item": this.childNodes[1].childNodes[1].alt}
+      );
     })
+
+    // mixpanel.track_links(".nav-icons", "click work", {
+    //     "referrer": document.referrer
+    // });
 
   if(!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent) )) {
     navScroll();

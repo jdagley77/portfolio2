@@ -213,7 +213,7 @@ and (max-device-width : 1024px) {
 /*intro section */
 
 #intro {
-  background-color: lightgrey;
+  background-color: yellow;
   padding: 30px;
   padding-top: 80px;
   height: 100%;
@@ -244,10 +244,16 @@ and (max-device-width : 1024px) {
   padding: 30px;
   padding-top: 80px;
   height: 100%;
+  background-image: url("http://res.cloudinary.com/dtk22y6kq/image/upload/v1492725327/tahoe_exl8rx.png")
 }
 
 .intro-text, .profile {
     padding: 0 10% 0 10%;
+}
+
+#intro-about {
+  font-size: 14px;
+  color: darkgrey;
 }
 
 .intro-text {
@@ -256,10 +262,11 @@ and (max-device-width : 1024px) {
   justify-content: center;
   padding-right: 5%;
   max-height: 50%;
+  color: yellow;
 }
 
 .intro-color {
-  color: yellow;
+  color: #4492DE;
 }
 
 .profile {
